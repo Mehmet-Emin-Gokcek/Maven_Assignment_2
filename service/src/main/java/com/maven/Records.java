@@ -1,0 +1,44 @@
+package com.maven;
+
+public class Records implements java.io.Serializable {
+
+    public String Name;
+    public String City;
+    public String Country;
+
+    public Records(String name, String city, String country) {
+        Name = name;
+        City = city;
+        Country = country;
+    }
+
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public String getCity() {
+        return City;
+    }
+
+    public void setCity(String city) {
+        City = city;
+    }
+
+    public String getCountry() {
+        return Country;
+    }
+
+    public void setCountry(String country) {
+        Country = country;
+    }
+
+    public String toString() {
+        return "{ Name: " + Name + ", City: " + City + ", Country: " + Country + " }\n";
+    }
+
+}
